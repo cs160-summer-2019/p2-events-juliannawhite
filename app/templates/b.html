@@ -32,14 +32,21 @@
 				<div class="shape-container">
 					<!-- Dynamically add your circles here! -->
 					<!-- Example circle: <div class="p2-circle bg-blue"></div> -->
+       
+          
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-<script type="text/javascript">
-
+<script type="text/javascript"> 
+  let addBlue = () => $(".shape-container").append(function(){return "<div class='p2-circle bg-blue'></div>";});
+  setInterval(() => {
+  addBlue();}, 1000);
+  
+  
+  
 	// your solution here
 
 </script>
