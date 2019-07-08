@@ -41,9 +41,21 @@
 
 
 <script type="text/javascript"> 
+  
+  $('.float-right').on('click', ()=> {
+    $(clear());
+  });
+  
   let addBlue = () => $(".shape-container").append(function(){return "<div class='p2-circle bg-blue'></div>";});
-  setInterval(() => {
-  addBlue();}, 1000);
+  let startBubble = setInterval(() => {addBlue();}, 1000);
+  function clear() {
+    clearInterval(startBubble);
+}
+  
+  
+  
+ 
+  
   
   
   
